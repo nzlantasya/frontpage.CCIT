@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CCIT - login</title>
+    <style>
+        /* Reset browser default & box sizing agar ukuran elemen presisi */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        /* Background menggunakan perpaduan radial gradient: baby pink di tengah, baby blue di pinggir */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: radial-gradient(circle, #fcdfe9 0%, #e2ebf4 60%, #c7daf0 100%);
+        }
+
+        /* Kotak login dengan warna abu-abu kebiruan soft sesuai gambar */
+        .login-container {
+            background-color: #dbe2e9;
+            width: 100%;
+            max-width: 410px;
+            padding: 35px 30px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+            text-align: center;
+        }
+
+        /* Judul teks utama dibuat tebal dan simetris */
+        .login-title {
+            font-size: 1.35rem;
+            font-weight: 700;
+            color: #1a1a1a;
+            margin-bottom: 25px;
+            line-height: 1.35;
+        }
+
+        /* Pengaturan jarak antar form input */
+        .form-group {
+            text-align: left;
+            margin-bottom: 20px;
+        }
+
+        /* Label input (Name & Password) */
+        .form-group label {
+            display: block;
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: #4a4a4a;
+            margin-bottom: 6px;
+        }
+
+        /* Field kotak input berwarna putih bersih */
+        .form-group input {
+            width: 100%;
+            padding: 11px 12px;
+            font-size: 1rem;
+            border: 1px solid #ffffff;
+            border-radius: 4px;
+            background-color: #ffffff;
+            outline: none;
+            transition: border-color 0.2s;
+        }
+
+        /* Sedikit highlight jika kolom input diklik */
+        .form-group input:focus {
+            border-color: #b0c4de;
+        }
+
+        /* Tombol Enter berwarna putih dengan teks di tengah */
+        .btn-submit {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            font-size: 0.95rem;
+            font-weight: bold;
+            color: #222222;
+            background-color: #ffffff;
+            border: 1px solid #ffffff;
+            border-radius: 4px;
+            cursor: pointer;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+            transition: background-color 0.2s;
+        }
+
+        /* Efek hover lembut pada tombol */
+        .btn-submit:hover {
+            background-color: #f7f9fa;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="login-container">
+        <h1 class="login-title">
+            Login to CCIT<br>
+            (Collaborative Center for Innovative Training)
+        </h1>
+        
+        <form>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required autocomplete="off">
+            </div>
+            
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            
+            <button type="submit" class="btn-submit">Enter</button>
+        </form>
+    </div>
+
+</body>
+</html>
