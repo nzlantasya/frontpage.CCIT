@@ -44,5 +44,3 @@ Through this project, I learned:
 
 Project screenshots are available in the `screenshots` folder.
 
-## Author
-Nazilatun Natasya Ramadhani :)
